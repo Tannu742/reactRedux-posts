@@ -11,7 +11,7 @@ const Photo = () => {
 
     useEffect(() => {
         dispatch(fetchPhoto(1))
-    }, []);
+    }, [dispatch]);
 
     // 'user=rk&email=abc.com&password=234234'
 

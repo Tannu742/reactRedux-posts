@@ -18,7 +18,7 @@ const SinglePost = () => {
 
     useEffect(() => {
         dispatch(fetchSinglePosts(postId));
-    }, [postId]);
+    }, [postId, dispatch]);
 
     useEffect(() => {
         dispatch(fetchPosts());

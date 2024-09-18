@@ -15,7 +15,7 @@ const Home = () => {
 
     useEffect(() => {
         dispatch(fetchPosts())
-    }, []);
+    }, [dispatch]);
 
     // const handlePhotoBtn = () => navigate('/photo')
     const handleDelete = (id) => dispatch(fetchDeletePosts(id));
