@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.w-100{
+  width: 100%;
+}
+.col-5{
+  width: 50%;
+}
+.col-6{
+  width: 60%;
+}
+.col-2{
+  width: 20%;
+}
+.col-3{
+  width: 30%;
+}
+.col-4{
+  width: 40%;
+}
+.col-4_5{
+  width: 49.5%;
+}
+.col-7{
+  width: 70%;
+}
+.col-8{
+  width: 80%;
+}
+.fL{
+  float: left;
+}
+.fR{
+  float: right;
+}
+.text-align-center{
+  text-align: center;
+}
+.text-align-right{
+  text-align: right;
+}
+.align-items-center{
+  align-items: center;
+}
+.align-content-center{
+  align-content: center;
+}
+.align-content-end{
+  align-content: end;
+}
+.align-self-center{
+  align-self: center;
+}
+.place-content-center{
+  place-content: center;
+}
+.justify-content-spaceEvenly{
+  justify-content: space-evenly;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-right{
+  justify-content: right;
+}
+.justify-content-spaceAround{
+  justify-content: space-around;
+}
+.justify-content-spaceBetween{
+  justify-content: space-between;
+}
+.position-relative{
+  position: relative;
+}
+.position-absolute{
+  position: absolute;
+}
+.noWrap{
+  flex-wrap: nowrap;
+}
+.overFlow_X{
+  overflow-x: auto;
+}
+.px-10{
+  padding: 0 10px;
+}
+.py-10{
+  padding: 10px 0;
+}
+.mx-10{
+  margin: 10px 0;
+}
+.my-10{
+  margin: 0 10px;
+}
+.marginTop_10p{
+  margin-top: 10%;
+}
+.pointer{
+  cursor: pointer;
+}
+.textCapital{
+  text-transform: capitalize;
+}
+.marginAuto{
+  margin: 0 auto;
+}
+.overflowYScroll{
+  overflow-y: scroll;
+}
+.height150{
+  height: 150px;
+}
+.object_fitCover{
+  object-fit: cover;
+}
+.borderRadius_5{
+  border-radius: 5%;
+}
+.borderRadius_Half{
+  border-radius: 50%;
+}

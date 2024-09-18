@@ -1,0 +1,238 @@
+@import url('main.css');
+
+.header {
+    background-color: var(--background-color);
+    box-shadow: 2px 2px 2px 2px #f3f3f3;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    padding: 8px 30px;
+}
+
+.headerIcons:hover {
+    cursor: pointer;
+}
+
+.headerIcons span {
+    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
+    color: var(--btnfont-color);
+    padding: 10px 35px;
+    margin: 0 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-family: var(--font-family);
+}
+
+.homePost {
+    margin-top: 10px;
+    padding: 12px;
+}
+
+.homePost h2 {
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    color: var(--title-color);
+}
+
+.homePost p {
+    margin: 15px 0 12px 0;
+    text-transform: capitalize;
+    color: var(--font-color);
+}
+
+.aboutCard {
+    background-color: var(--box-backColor);
+    padding: 20px;
+    margin: 20px;
+    position: sticky;
+}
+
+.aboutMeCard {
+    padding: 35px 0;
+}
+
+.aboutMeCard h3 {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.aboutMecardIcons a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.readMoreBox {
+    margin-top: 40px;
+}
+
+.readMoreBox a {
+    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
+    color: var(--btnfont-color);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.readMoreBox span {
+    color: var(--font-color);
+}
+
+.positionArrow {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    color: var(--btnfont-color);
+    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
+}
+
+.singlePosts img {
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.singlePostsDes h3 {
+    color: var(--hover-color);
+    font-family: var(--font-family);
+    font-size: 40px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.singlePostsDes p {
+    color: var(--hover-color);
+    font-size: 20px;
+    padding: 20px;
+}
+
+.popularArticles {
+    background-color: var(--box-backColor);
+    padding: 20px;
+    position: fixed;
+    top: 90px;
+    right: 20px;
+}
+
+.popularArticlesName {
+    margin: 15px;
+}
+
+.popularArticlesName h3 {
+    text-transform: capitalize;
+    color: var(--hover-color);
+    font-size: 25px;
+}
+
+.popularArticlesItems .homePost {
+    padding: 0;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.popularArticlesItems .homePost .col-5 img {
+    height: 80px;
+    width: 80px;
+}
+
+.popularArticlesItems .homePost .col-5 h2 {
+    font-size: 15px;
+    width: 240px;
+    padding-left: 10px;
+}
+
+.popularArticlesItems .homePost .col-5 p {
+    display: none;
+}
+
+.popularArticlesItems .homePost .readMoreBox {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 250 250 / 62%);
+    z-index: 99;
+    overflow: auto;
+    padding: 20px 0;
+}
+
+.modal-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.popHead {
+    padding: 20px;
+}
+
+.popHeadCross {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    text-align: right;
+    font-size: 22px;
+}
+
+.srchModal .popHead h1 {
+    text-align: center;
+    color: var(--font-color);
+}
+
+.inputBtn {
+    padding: 10px 25px;
+    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
+    color: var(--btnfont-color);
+    border: none;
+}
+.DataType{
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px #a09b9b;
+}
+.DataType table {
+    margin: 20px;
+}
+
+.DataType table th{
+    padding: 3px;
+}
+.DataType table tbody td{
+    width: 80%;
+    border-bottom: 1px solid #757171;
+    padding: 10px 8px
+}
+.DataTableRow select{
+    border: none;
+}
+.DataTableRow button{
+    border: none;
+    margin-right: 15px;
+}
+svg.svg-inline--fa.fa-chevron-right.px-10:hover {
+    background-color: #bbb6b6;
+    border-radius: 50%;
+}
+.srhCategory ol li{
+    margin: 15px 20px;
+}
+.srhCategory ol li span{
+    background-color: #757171;
+    color: #f3f3f3;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.texthead{
+    border: none;
+    padding: 10px 25px;
+    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
+    color: var(--btnfont-color);
+}
