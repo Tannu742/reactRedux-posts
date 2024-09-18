@@ -36,7 +36,7 @@ const AboutCard = () => {
                     delay={{ show: 250, hide: 400 }}
                     overlay={renderTooltipTwitter}
                 >
-                <a href="#">twitter</a>
+                <a href="/twitter">twitter</a>
                 </OverlayTrigger>
                 <FontAwesomeIcon icon={faFacebook} />
                 <OverlayTrigger
@@ -44,7 +44,7 @@ const AboutCard = () => {
                     delay={{ show: 250, hide: 400 }}
                     overlay={renderTooltipFacebook}
                 >
-                <a href="#">FaceBook</a>
+                <a href="/facebook">FaceBook</a>
                 </OverlayTrigger>
             </div>
         </div>

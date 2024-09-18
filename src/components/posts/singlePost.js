@@ -4,9 +4,7 @@ import { fetchSinglePosts } from '../../features/posts/singleSlice';
 import img from '../../assets/img/img.webp'
 import decorLogo from '../../assets/img/decorationLogo.png'
 import { useParams } from 'react-router-dom';
-import Home from '../../pages/home';
 import Posts from '../../components/posts';
-import constants from '../../constants';
 import { fetchPosts } from '../../features/posts/postSlice';
 
 const SinglePost = () => {
@@ -24,7 +22,7 @@ const SinglePost = () => {
 
     useEffect(() => {
         dispatch(fetchPosts());
-    }, []);
+    }, ['']);
     return (
         <div className='container'>
             <div className='singlePosts row marginTop_10p'>
