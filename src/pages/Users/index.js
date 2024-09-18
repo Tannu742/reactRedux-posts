@@ -172,7 +172,7 @@ const Users = () => {
         // console.log(a);
         const totalRecords = tbodyData.length;
         setPages(totalRecords / perPage);
-    }, [tbodyData]);
+    }, [tbodyData, perPage]);
 
     return (
         <div>
