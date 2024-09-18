@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import api, { getMethod } from '../../utils/api';
-import constants from '../../constants';
+import { statusSlice } from '../../constants';
 
 const initialState = {
     post: {},
@@ -20,15 +20,15 @@ const singlePostsSlice = createSlice({
     extraReducers(builder) {
         builder
             .addCase(fetchSinglePosts.pending, (state) => {
-                state.status = constants.STATUS.LOADING;
+                state.status = statusSlice.STATUS.LOADING;
                 state.post = {};
             })
             .addCase(fetchSinglePosts.fulfilled, (state, action) => {
-                state.status = constants.STATUS.SUCCESS
+                state.status = statusSlice.STATUS.SUCCESS
                 state.post = action.payload;
             })
             .addCase(fetchSinglePosts.rejected, (state, action) => {
-                state.status = constants.STATUS.FAIL
+                state.status = statusSlice.STATUS.FAIL
                 state.post = action.error.message;
             })
     }

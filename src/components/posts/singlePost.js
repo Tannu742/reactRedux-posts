@@ -22,7 +22,7 @@ const SinglePost = () => {
 
     useEffect(() => {
         dispatch(fetchPosts());
-    }, ['']);
+    }, [dispatch]);
     return (
         <div className='container'>
             <div className='singlePosts row marginTop_10p'>

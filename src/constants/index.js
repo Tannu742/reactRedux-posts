@@ -1,4 +1,4 @@
-export default {
+export const statusSlice = {
     STATUS: {
         LOADING: 'loading',
         IDLE: 'idle',
