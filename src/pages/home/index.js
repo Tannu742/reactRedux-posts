@@ -17,13 +17,12 @@ const Home = () => {
         dispatch(fetchPosts())
     }, [dispatch]);
 
-    // const handlePhotoBtn = () => navigate('/photo')
     const handleDelete = (id) => dispatch(fetchDeletePosts(id));
     const handleEdit = (data = {}) => dispatch(fetchEditPosts(data));
 
     return (
         <div className='container'>
-            <div className='row marginTop_10p'>
+            <div className='row'>
                 <div className='col-6'>
                     {status === statusSlice.STATUS.LOADING && 'loading...'}
                     {status === statusSlice.STATUS.SUCCESS ?
@@ -33,6 +32,9 @@ const Home = () => {
                 </div>
                 <div className='col-4'>
                     <AboutCard />
+                    <div className='readMoreBox text-align-center'>
+                        <a href="/users">Users</a>
+                    </div>
                 </div>
             </div>
             <div className='positionArrow text-align-center align-content-center borderRadius_Half'>

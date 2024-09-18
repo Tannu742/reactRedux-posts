@@ -190,6 +190,9 @@ const Users = () => {
                 handleInput={handleInput}
                 handleSort={handleSort}
             />
+            <div className='readMoreBox'>
+                <a href="/">Back to Home</a>
+            </div>
         </div>
     );
 }
