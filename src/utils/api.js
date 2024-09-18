@@ -10,8 +10,10 @@ export const patchMethod = async (url,data) => await axios.patch(url,data).catch
 export const postMethod = async (url,data) => await axios.post(url,data).catch(console.error);
 
 
-export default {
+const apiUrls = {
     photos: `${BASE_URL}/photos`,
     posts: `${BASE_URL}/posts`
     // posts: (userId) => `${BASE_URL}/posts/${userId}/photos`,
 }
+
+export default apiUrls;
