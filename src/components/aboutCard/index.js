@@ -2,20 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import avatar from '../../assets/img/Avatar.png'
 import decorLogo from '../../assets/img/decorationLogo.png'
 import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
 
 const AboutCard = () => {
-    const renderTooltipTwitter = (props) => (
-        <Tooltip id="button-tooltip" {...props}>
-            twitter
-        </Tooltip>
-    );
-    const renderTooltipFacebook = (props) => (
-        <Tooltip id="button-tooltip" {...props}>
-            FaceBook
-        </Tooltip>
-    );
     return (
         <div className='aboutCard'>
             <div className='aboutMeCard row align-items-center'>
@@ -31,21 +19,9 @@ const AboutCard = () => {
                 also, i offer live support via our ticket system.</p>
             <div className='row aboutMecardIcons align-items-center'>
                 <FontAwesomeIcon icon={faTwitter} />
-                <OverlayTrigger
-                    placement="top"
-                    delay={{ show: 250, hide: 400 }}
-                    overlay={renderTooltipTwitter}
-                >
                 <a href="/twitter">twitter</a>
-                </OverlayTrigger>
                 <FontAwesomeIcon icon={faFacebook} />
-                <OverlayTrigger
-                    placement="top"
-                    delay={{ show: 250, hide: 400 }}
-                    overlay={renderTooltipFacebook}
-                >
                 <a href="/facebook">FaceBook</a>
-                </OverlayTrigger>
             </div>
         </div>
     );
